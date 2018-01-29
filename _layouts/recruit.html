@@ -1,0 +1,31 @@
+---
+layout: global
+
+style-sheets: recruit.css
+---
+
+<header>
+  {% include recruit/components/nav/main-navigation.html %}
+</header>
+
+{{ content }}
+
+<!-- JOBS -->
+{% include recruit/components/modals/jobs/job-request-template-modal.html %}
+{% include recruit/components/modals/jobs/job-request-template-view-modal.html %}
+
+{% include recruit/components/modals/jobs/job-request-discard-modal.html %}
+{% include recruit/components/modals/jobs/job-request-publish-modal.html %}
+{% include recruit/components/modals/jobs/job-request-reject-modal.html %}
+{% include recruit/components/modals/jobs/job-request-unpublish-modal.html %}
+
+{% include recruit/components/modals/jobs/process-modal.html %}
+{% include recruit/components/modals/jobs/assign-recruiter-modal.html %}
+
+<!-- APPLICANTS -->
+{% include recruit/components/modals/applicants/applicant-profile-confirmation-modal.html %}
+{% include recruit/components/modals/applicants/applicant-profile-discard-modal.html %}
+
+{% include recruit/components/modals/applicants/applicant-profile-edit-modal.html %}
+
+{% include recruit/components/modals/applicants/application-modal.html %}

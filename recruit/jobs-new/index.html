@@ -1,0 +1,227 @@
+---
+layout: recruit-box
+
+meta-title: Jobs | Sprout Recruit
+
+heading-title: Jobs
+
+heading-button: <button class="btn btn-primary" role="button" data-toggle="modal" data-target="#job-request-template-modal"><span class="fa fa-plus fa-right"></span>Add Job</button>
+---
+
+<ul class="nav nav-sm pull-left" id="search-filter">
+  <li>
+    <a href="#search-filter-dropdown" data-toggle="collapse"><span class="fa fa-search fa-lg fa-right"></span>SEARCH / FILTER</a>
+    <div class="collapse" id="search-filter-dropdown">
+      <form class="" action="" method="">
+        <p class="lead text-success">SEARCH</p>
+        <div class="form-group form-group-lg has-icon left">
+          <input type="search" class="form-control" id="search-job-name" placeholder="Search Job Name">
+          <span class="form-icon"><i class="fa fa-search"></i></span>
+        </div>
+        <p class="lead text-success">FILTER</p>
+        <div class="form-group">
+          <label class="form-label">Status</label>
+          <div data-toggle="buttons">
+            <label class="btn btn-outline-primary btn-sm active">
+              <input type="checkbox">All Jobs
+            </label>
+            <label class="btn btn-outline-primary btn-sm">
+              <input type="checkbox">For Approval
+            </label>
+            <label class="btn btn-outline-primary btn-sm">
+              <input type="checkbox">For Checking
+            </label>
+            <label class="btn btn-outline-primary btn-sm">
+              <input type="checkbox">Open
+            </label>
+            <label class="btn btn-outline-primary btn-sm">
+              <input type="checkbox">Closed
+            </label>
+            <label class="btn btn-outline-primary btn-sm">
+              <input type="checkbox">Unpublished
+            </label>
+            <label class="btn btn-outline-primary btn-sm">
+              <input type="checkbox">Rejected
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="">Company</label>
+          <select class="form-control">
+            <option value="">All Company</option>
+            <option value="">Ayala Land Inc.</option>
+            <option value="">AG Holdings Ltd</option>
+            <option value="">Bank of the Philippine Island</option>
+            <option value="">Globe Telecom</option>
+            <option value="">Manila Water Company Inc.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="">Department/Division</label>
+          <select class="form-control">
+            <option value="">All Department/Division</option>
+            <option value="">Sales and Marketing</option>
+            <option value="">Customer Support</option>
+            <option value="">Engineering</option>
+            <option value="">Technology</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="daterange">Date Added</label>
+          <div class="input-daterange input-group" id="daterange">
+            <input type="text" class="form-control" name="start" placeholder="Start Date">
+            <span class="input-group-addon">to</span>
+            <input type="text" class="form-control" name="end" placeholder="End Date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="daterange">Date Needed</label>
+          <div class="input-daterange input-group" id="daterange">
+            <input type="text" class="form-control" name="start" placeholder="Start Date">
+            <span class="input-group-addon">to</span>
+            <input type="text" class="form-control" name="end" placeholder="End Date">
+          </div>
+        </div>
+        <hr class="dashed" />
+        <div class="text-right">
+          <a class="btn btn-link" href="">Cancel</a>
+          <a class="btn btn-primary" href="">Search</a>
+        </div>
+      </form>
+    </div>
+  </li>
+  <li>
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-primary btn-sm">Filtering is on</button>
+      <button type="button" class="btn btn-primary btn-sm dropdown-toggle"><span class="fa fa-times"></span></button>
+    </div>
+  </li>
+</ul>
+<ul class="nav nav-sm pull-right">
+  <li class="active"><a href="#">ALL JOBS</a></li>
+  <li><a href="#">FOR APPROVAL</a></li>
+  <li><a href="#">FOR CHECKING</a></li>
+  <li><a href="#">OPEN</a></li>
+  <li><a href="#">CLOSED</a></li>
+  <li><a href="#">UNPUBLISHED</a></li>
+  <li><a href="#">REJECTED</a></li>
+</ul>
+<div class="section section-default" id="job-list">
+  <div class="table-responsive">
+    <table class="table table-hover table-lg">
+      <thead>
+        <tr>
+          <th class="col-6"><a href="#">Job Details<span class="fa fa-sort fa-left"></span></a></th>
+          <th class="col-1"><a href="#">Date Added<span class="fa fa-sort fa-left"></span></a></th>
+          <th class="col-1"><a href="#">Date Needed<span class="fa fa-sort fa-left"></span></a></th>
+          <th class="col-1"><a href="#">Processing<span class="fa fa-sort fa-left"></span></a></th>
+          <th class="col-1"><a href="#">Offered<span class="fa fa-sort fa-left"></span></a></th>
+          <th class="col-1"><a href="#">Hired<span class="fa fa-sort fa-left"></span></a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="lead" href="{{ site.baseurl }}/recruit/jobs-new/profile.html">Business Development Associate</a>
+            <p class="text-muted">Sales and Marketing at Ayala Land Inc.</p>
+            <span class="badge badge-warning">For Checking</span>
+          </td>
+          <td>May 1, 2017</td>
+          <td>May 31,2017</td>
+          <td class="h5">0</td>
+          <td class="h5">0</td>
+          <td class="h5">0<small class="text-muted">/0</small></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="lead" href="{{ site.baseurl }}/recruit/jobs-new/profile.html">Customer Service Representative</a>
+            <p class="text-muted">Customer Support at AG Holding Ltd.</p>
+            <span class="badge badge-warning">For Checking</span>
+          </td>
+          <td>April 27, 2017</td>
+          <td>May 15, 2017</td>
+          <td class="h5">0</td>
+          <td class="h5">0</td>
+          <td class="h5">0<small class="text-muted">/0</small></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="lead" href="{{ site.baseurl }}/recruit/jobs-new/profile.html">Mid Software Engineer: Ruby On Rails</a>
+            <p class="text-muted">Engineering Team at Bank of the Philippine Island</p>
+            <span class="badge badge-success">Open</span>
+          </td>
+          <td>April 25, 2017</td>
+          <td>June 7, 2017</td>
+          <td class="h5">17</td>
+          <td class="h5">2</td>
+          <td class="h5">3<small class="text-muted">/5</small></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="lead" href="{{ site.baseurl }}/recruit/jobs-new/profile.html">Senior Process Executive</a>
+            <p class="text-muted">Technology Department at Globe Telecom</p>
+            <span class="badge badge-warning">For Approval</span>
+            <ul class="list list-inline hidden">
+              <li><span class="badge badge-warning">For Approval</span></li>
+              <li class="divider"></li>
+              <li><a href="">Approve</a></li>
+              <li class="divider"></li>
+              <li><a href="">Reject</a></li>
+            </ul>            
+          </td>
+          <td>April 4, 2017</td>
+          <td>May 4,2017</td>
+          <td class="h5">11</td>
+          <td class="h5">0</td>
+          <td class="h5">3<small class="text-muted">/3</small></td>
+        </tr>
+        <tr class="table-disabled">
+          <td>
+            <a class="lead" href="{{ site.baseurl }}/recruit/jobs-new/profile.html">Messaging and Collaborative Engineer</a>
+            <p>Engineering Department at Manila Water Company Inc.</p>
+            <span class="badge badge-default">Closed</span>
+          </td>
+          <td>April 1, 2017</td>
+          <td>May 1,2017</td>
+          <td class="h5">0</td>
+          <td class="h5">0</td>
+          <td class="h5">0<small class="text-muted">/0</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section-footer">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="pagination-settings">
+          Results 1 - 10 of 100
+          <span class="dropup mar-left-2">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">5 entries per page<span class="fa fa-angle-up fa-lg fa-left"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-header">Entries per page:</li>
+              <li class="active"><a href="#">5 items</a></li>
+              <li><a href="#">10 items</a></li>
+              <li><a href="#">25 items</a></li>
+              <li><a href="#">50 items</a></li>
+              <li><a href="#">100 items</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-6 text-right">
+        <ul class="pagination mar-hor-auto">
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#"><span class="fa fa-angle-right fa-lg"></span></a></li>
+          <li><a href="#"><span class="fa fa-angle-double-right fa-lg"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

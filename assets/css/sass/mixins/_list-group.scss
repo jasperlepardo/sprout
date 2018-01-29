@@ -1,0 +1,45 @@
+// List Groups
+
+// @mixin list-group-item-variant($state, $background, $color) {
+@mixin list-group-item-variant($state, $background, $color: #FFFFFF) {
+  $hover-background: darken($background, 15%);
+  // $hover-border: darken($border, 15%);
+
+  $active-background: darken($background, 10%);
+  // $active-border: darken($border, 10%);
+
+  $focus-background: darken($background, 10%);
+  // $focus-border: darken($border, 10%);
+
+  .list-group-item-#{$state} {
+    color: $color;
+    background-color: $background;
+  }
+
+  a.list-group-item-#{$state},
+  button.list-group-item-#{$state} {
+    color: $color;
+
+    .list-group-item-heading {
+      color: inherit;
+    }
+
+    @include hover-focus {
+      color: $color;
+      background-color: $hover-background;
+    }
+
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: $focus-background;
+    }
+
+    &.active,
+    &.active:hover,
+    &.active:focus {
+      color: $color;
+      background-color: $active-background;
+    }
+  }
+}

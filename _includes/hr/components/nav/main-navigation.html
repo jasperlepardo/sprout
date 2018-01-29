@@ -1,0 +1,176 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hr-header" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/hr/">
+        <img class="navbar-brand-images"src="{{ site.baseurl }}/assets/images/logo/sprout.svg" alt="">
+        <span class="navbar-brand-text">HR</span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="hr-header">
+      <ul class="nav navbar-nav navbar-right nav-lg">
+        <li class="{% if page.url == '/hr/my-requests/' %} active {% endif %}">
+          <a href="{{ site.baseurl }}/hr/my-requests/">My Requests</a>
+        </li>
+        <li class="dropdown {% if
+          page.url contains '/hr/my-team/' or
+          page.url contains '/hr/my-team/resolution-center.html' or
+          page.url contains '/hr/my-team/approval-center.html'
+          %} active {% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Team<span class="fa fa-angle-down fa-lg fa-left"></span></a>
+          <ul class="dropdown-menu">
+            <li class="{% if page.url == '/hr/my-team/' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-team/">My Team</a>
+            </li>
+            <li class="{% if page.url == '/hr/my-team/resolution-center.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-team/resolution-center.html">Resolution Center</a>
+            </li>
+            <li class="{% if page.url == '/hr/my-team/approval-center.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-team/approval-center.html">Approval Center</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown {% if
+          page.url contains '/hr/my-company/organization-chart.html' or
+          page.url contains '/hr/my-company/calendar.html' or
+          page.url contains '/hr/my-company/employee-directory.html' or
+          page.url contains '/hr/my-company/hr-analytics.html' or
+          page.url contains '/hr/my-company/payroll-analytics.html'
+          %} active {% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Company<span class="fa fa-angle-down fa-lg fa-left"></span></a>
+          <ul class="dropdown-menu">
+            <li class="{% if page.url == '/hr/my-company/organization-chart.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-company/organization-chart.html">Organization Chart</a>
+            </li>
+            <li class="{% if page.url == '/hr/my-company/calendar.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-company/calendar.html">Calendar</a>
+            </li>
+            <li class="{% if page.url == '/hr/my-company/employee-directory.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-company/employee-directory.html">Employee Directory</a>
+            </li>
+            <li class="{% if page.url == '/hr/my-company/hr-analytics.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-company/hr-analytics.html">HR Analytics</a>
+            </li>
+            <li class="{% if page.url == '/hr/my-company/payroll-analytics.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/my-company/payroll-analytics.html">Payroll Analytics</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown {% if
+          page.url contains '/hr/administration-tools/add-employee.html' or
+          page.url contains '/hr/administration-tools/leave-report.html' or
+          page.url contains '/hr/administration-tools/overtime-report.html' or
+          page.url contains '/hr/administration-tools/bulk-upload.html' or
+          page.url contains '/hr/administration-tools/memo-search.html' or
+          page.url contains '/hr/administration-tools/employee-list-report.html' or
+          page.url contains '/hr/administration-tools/form-generator.html' or
+          page.url contains '/hr/administration-tools/attendance-management.html' or
+          page.url contains '/hr/administration-tools/attendance-report' or
+          page.url contains '/hr/administration-tools/email-blast.html' or
+          page.url contains '/hr/administration-tools/audit-trail.html'
+          %} active {% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration Tools<span class="fa fa-angle-down fa-lg fa-left"></span></a>
+          <ul class="dropdown-menu">
+            <li class="{% if page.url == '/hr/administration-tools/add-employee.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/add-employee.html">Add Employee</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/leave-report.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/leave-report.html">Leave Report</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/overtime-report.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/overtime-report.html">Overtime Report</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/bulk-upload.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/bulk-upload.html">Bulk Upload</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/memo-search.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/memo-search.html">Memo Search</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/employee-list-report.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/employee-list-report.html">Employee List Report</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/form-generator.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/form-generator.html">Form Generator</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/attendance-management.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/attendance-management.html">Attendance Management</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/attendance-report.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/attendance-report.html">Attendance Report</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/email-blast.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/email-blast.html">Email Blast</a>
+            </li>
+            <li class="{% if page.url == '/hr/administration-tools/audit-trail.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/administration-tools/audit-trail.html">Audit Trail</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown {% if
+          page.url contains '/hr/maintainance/company.html' or
+          page.url contains '/hr/maintainance/work-place.html' or
+          page.url contains '/hr/maintainance/assets.html' or
+          page.url contains '/hr/maintainance/visa.html' or
+          page.url contains '/hr/maintainance/benefits-type.html' or
+          page.url contains '/hr/maintainance/biometrics.html' or
+          page.url contains '/hr/maintainance/access-levels.html' or
+          page.url contains '/hr/maintainance/email-templates.html' or
+          page.url contains '/hr/maintainance/form-templates.html'
+          %} active {% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maintenance<span class="fa fa-angle-down fa-lg fa-left"></span></a>
+          <ul class="dropdown-menu">
+            <li class="{% if page.url == '/hr/maintainance/company.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/company.html">Company</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/work-place.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/work-place.html">Work Place</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/assets.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/assets.html">Assets</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/visa.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/visa.html">Visa</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/benefits-type.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/benefits-type.html">Benefits Type</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/biometrics.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/biometrics.html">Biometrics</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/access-levels.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/access-levels.html">Access Levels</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/email-templates.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/email-templates.html">Email Templates</a>
+            </li>
+            <li class="{% if page.url == '/hr/maintainance/form-templates.html' %} active {% endif %}">
+              <a href="{{ site.baseurl }}/hr/maintainance/form-templates.html">Form Templates</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="btn btn-link"><span class="fa fa-search"></span></a></li>
+        <li><a class="btn btn-link"><span class="fa fa-bell-o"></span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jasper Lepardo<span class="fa fa-angle-down fa-lg fa-left"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">My Attendance</a></li>
+            <li><a href="#">My Biologs</a></li>
+            <li><a href="#">My Tasks</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,21 @@
+---
+layout: global
+
+style-sheets: design-system.css
+---
+
+<header>
+  {% include design-system/components/nav/main-navigation.html %}
+</header>
+
+<main class="container">
+
+  <div class="row">
+
+    {{ content }}
+
+  </div>
+
+</main>
+
+{% include design-system/components/modal.html %}

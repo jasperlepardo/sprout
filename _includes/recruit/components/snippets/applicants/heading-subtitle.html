@@ -1,0 +1,18 @@
+<h1 class="heading-title display-3">{{ page.heading-title }}</h1>
+<div class="row">
+  <div class="col-md-8">
+    <p class="heading-subtitle">{{ page.profile-position }} at {{ page.profile-company }}</p>
+  </div>
+  <div class="col-md-4 text-right">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#applicant-profile-edit-modal" type="button">Edit Profile</button>
+    <div class="dropdown" style="display: inline-block;">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+        More<span class="fa fa-angle-down fa-lg fa-left"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#"><span class="fa fa-clone fa-right"></span>Block this Applicant</a></li>
+        <li><a href="#"><span class="fa fa-trash-o fa-right"></span>Delete Applicant Profile</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

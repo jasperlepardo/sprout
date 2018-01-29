@@ -1,0 +1,31 @@
+---
+layout: recruit-add-applicant
+
+meta-title: Add Job
+
+heading-title: Add Applicant
+
+---
+
+<div class="section section-success" id="applicant-information">
+  <div class="section-heading">
+    <h6 class="section-title display-4">Information</h6>
+  </div> 
+  {% include recruit/components/snippets/applicants/edit-mode/applicant-information.html %}
+</div>
+
+<div class="section section-success hidden" id="applicant-job-applications">
+  <div class="section-heading">
+    <button class="btn btn-link btn-toggle" data-target="#application-modal" data-toggle="modal" type="button"><span class="fa fa-plus fa-right"></span>Add Application</button>
+    <h6 class="section-title display-4">Job Application</h6>
+  </div> 
+  {% include recruit/components/snippets/applicants/view-mode/applicant-job-applications.html %}
+  <!-- {% include recruit/components/snippets/applicants/edit-mode/applicant-job-applications.html %} -->
+</div>
+
+<hr class="dashed">
+
+<div class="text-right">
+  <button class="btn btn-link" data-toggle="modal" data-target="#applicant-profile-discard-modal">Cancel</button>
+  <button class="btn btn-primary" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#applicant-profile-confirmation-modal">Add Applicant</button>
+</div>
